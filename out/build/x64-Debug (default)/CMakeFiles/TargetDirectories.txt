@@ -1,0 +1,5 @@
+C:/Users/River/source/repos/Dead By Daylight Character Information/out/build/x64-Debug (default)/CMakeFiles/edit_cache.dir
+C:/Users/River/source/repos/Dead By Daylight Character Information/out/build/x64-Debug (default)/CMakeFiles/rebuild_cache.dir
+C:/Users/River/source/repos/Dead By Daylight Character Information/out/build/x64-Debug (default)/Dead By Daylight Character Information/CMakeFiles/CMakeTarget.dir
+C:/Users/River/source/repos/Dead By Daylight Character Information/out/build/x64-Debug (default)/Dead By Daylight Character Information/CMakeFiles/edit_cache.dir
+C:/Users/River/source/repos/Dead By Daylight Character Information/out/build/x64-Debug (default)/Dead By Daylight Character Information/CMakeFiles/rebuild_cache.dir

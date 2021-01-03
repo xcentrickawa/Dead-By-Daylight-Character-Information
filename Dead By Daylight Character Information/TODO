@@ -1,0 +1,68 @@
+KILLER
+1. read the csv files - done
+2. print data from csv files - done
+3. get information of specific characters from csv files - done
+ - determine whether a character is owned or not - done
+ - determine whether a character has adept or not - done
+ - determine the highest winstreak of the character - done
+ - determine the current winstreak of the character - done
+4. manipulate the information of each character - done
+ - increase/set/reset current winstreak - done
+ - set/reset highest winstreak - done
+ - change whether a character is owned (and make all/none owned) - done
+ - change whether a character has adept (and make all/none adept) - done
+5. be able to sort the csv sheet - done
+ - own -> adept -> alphabetical order - done
+ - highest winstreak -> alphabetical order - done
+ - current winstreak -> alphabetical order - done
+6. be able to export the changes made to the csv sheet - done
+
+SURVIVOR
+1. read the csv files
+2. print data from csv files
+3. get information of specific characters from csv files
+ - determine whether a character is owned or not
+ - determine whether a character has adept or not
+4. manipulate the information of each character
+ - change whether a character is owned (and all/none characters owned)
+ - change whether a character has adept (and all/none characters w/ adept)
+5. be able to determine the current/highest winstreak of survivors
+6. manipulate the information of the general survivor 
+7. be able to sort the csv sheet
+ - own -> adept -> alphabetical order
+
+MAIN
+1. help command to send a list of commands - done
+2. list of commands:
+ GENERIC COMMANDS
+  - help - prints a list of all commands - done
+  - quit - ends the program - done
+ KILLER COMMANDS
+ - killer.help - prints all killer commands - done
+ - killer.save - saves the killer data - done
+ - killer.dataReset - resets all killer data to the default values
+ - killer.print - prints all killer data - done
+ - killer.print(killerName) - prints the information of a specific killer - done
+ - killer.own(killerName) - prints whether a specific killer is owned - done
+ - killer.adept(killerName) - prints whether a killer has adept - done
+ - killer.ownc(killerName) - changes whether a specific killer is owned - done
+ - killer.owncAll - makes all killers owned/not owned - done
+ - killer.adeptc(killerName) - changes whether a specific killer has adept - done
+ - killer.adeptcAll - makes all killers have/dont have adept - done
+ - killer.currWin(killerName) - prints the current winstreak of a specific killer - done
+ - killer.currWinAdd(killerName) - adds 1 win to the current winstreak of a specific killer - done
+ - killer.currWinReset(killerName) - resets the current winstreak of a specific killer and updates the high winstreak if needed - done
+ - killer.currWinSet(killerName, num) - set the current winstreak of a specific killer - done
+ - killer.highWin(killerName) - prints the highest winstreak of a specific killer - done
+ - killer.highWinSet(killerName, num) - sets the highest winstreak - done
+ - killer.sort - sorts the csv sheet with the generic sorting technique - done
+ - killer.sort(currWin) - sorts the csv sheet by current winstreak - done
+ - killer.sort(highWin) - sorts the csv sheet by highest winstreak - done
+ SURVIVOR COMMANDS
+ - survivor.help - prints a list of all survivor commands
+
+BUGS
+ - My current way of sorting char arrays does not work, but sorting integers does - FIXED: converted the char arrays to strings and used the same logic and it worked
+ - killer.highWinSet and killer.currWinSet sometimes cut off the last letter of some killers ONLY when printing - FIXED: math was wrong, made it findComma-18 instead of userInput.length()-findComma
+ - killer.adeptcAll and killer.owncAll sometimes leave random characters to those affected - NOTE: have no idea what is causing this - FIXED: used strcpy(k[]->own, "Yes") instead of the dumb thing I was using
+ - Saving killer data causes there to be an extra blank line on the csv sheet - FIXED: made it so the first one doesnt leave an extra line and all the others do
